@@ -151,11 +151,44 @@
 // const a = 12;
 
 
-let arr = [12, 13, 14, 15, 34, 35];
-let arr2 = [133, 98, 65, 78];
+// let arr = [12, 13, 14, 15, 34, 35];
+// let arr2 = [133, 98, 65, 78];
 
-let totalArray = arr2.concat(arr);
-console.log(arr);
-console.log(arr2);
-console.log(totalArray);
-console.log(Array.isArray(arr));
+// let totalArray = arr2.concat(arr);
+// console.log(arr);
+// console.log(arr2);
+// console.log(totalArray);
+// console.log(Array.isArray(arr));
+
+
+const phones = [
+   {name: "samsung", price: 1500},
+   {name: "apple", price: 1200},
+   {name: "oneplus", price: 1000},
+   {name: "nothing", price: 900},
+   {name: "xiaomi", price: 500},
+   {name: "oppo", price: 700},
+   {name: "walton", price: 300},
+   {name: "vivo", price: 200},
+   {name: "htc", price: 100},
+];
+
+
+function cheapestPhone(phones){
+
+   let cheapestOne = phones[0];
+
+   for(let i = 0; i < phones.length; i++){
+      const phone = phones[i];
+      if(phone.price < cheapestOne.price ){
+         cheapestOne = phone;
+      }
+   }
+   return cheapestOne;
+}
+
+
+const myChoice = cheapestPhone(phones);
+
+
+console.log(myChoice);
