@@ -134,15 +134,28 @@
 // console.log(minNumber(chinku, dela, kela));
 
 
-function reverseString(text){
-   let reversed = '';
-   for(let i = text.length - 1; i >= 0; i--){
-      const element = text[i];
-      reversed = reversed + element;
-   }
-   console.log(reversed);
-   return reversed
-}
+// function reverseString(text){
+//    let reversed = '';
+//    for(let i = text.length - 1; i >= 0; i--){
+//       const element = text[i];
+//       reversed = reversed + element;
+//    }
+//    console.log(reversed);
+//    return reversed
+// }
 
-let paragraph = "I love my Country. ";
-reverseString(paragraph);
+// let paragraph = "I love my Country. ";
+// reverseString(paragraph);
+
+
+// const a = 12;
+
+
+let arr = [12, 13, 14, 15, 34, 35];
+let arr2 = [133, 98, 65, 78];
+
+let totalArray = arr2.concat(arr);
+console.log(arr);
+console.log(arr2);
+console.log(totalArray);
+console.log(Array.isArray(arr));
