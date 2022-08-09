@@ -14,4 +14,4 @@ function bestFriend(friends){
 
 }
 
-console.log(bestFriend(friends));;
+console.log(bestFriend(friends));
