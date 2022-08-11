@@ -161,34 +161,47 @@
 // console.log(Array.isArray(arr));
 
 
-const phones = [
-   {name: "samsung", price: 1500},
-   {name: "apple", price: 1200},
-   {name: "oneplus", price: 1000},
-   {name: "nothing", price: 900},
-   {name: "xiaomi", price: 500},
-   {name: "oppo", price: 700},
-   {name: "walton", price: 300},
-   {name: "vivo", price: 200},
-   {name: "htc", price: 100},
-];
+// const phones = [
+//    {name: "samsung", price: 1500},
+//    {name: "apple", price: 1200},
+//    {name: "oneplus", price: 1000},
+//    {name: "nothing", price: 900},
+//    {name: "xiaomi", price: 500},
+//    {name: "oppo", price: 700},
+//    {name: "walton", price: 300},
+//    {name: "vivo", price: 200},
+//    {name: "htc", price: 100},
+// ];
 
 
-function cheapestPhone(phones){
+// function cheapestPhone(phones){
 
-   let cheapestOne = phones[0];
+//    let cheapestOne = phones[0];
 
-   for(let i = 0; i < phones.length; i++){
-      const phone = phones[i];
-      if(phone.price < cheapestOne.price ){
-         cheapestOne = phone;
-      }
-   }
-   return cheapestOne;
+//    for(let i = 0; i < phones.length; i++){
+//       const phone = phones[i];
+//       if(phone.price < cheapestOne.price ){
+//          cheapestOne = phone;
+//       }
+//    }
+//    return cheapestOne;
+// }
+
+
+// const myChoice = cheapestPhone(phones);
+
+
+// console.log(myChoice);
+
+
+
+
+
+
+
+let sum = 0;
+
+for (let i = 5; i >= 1; i--){
+   sum = sum + i;
 }
-
-
-const myChoice = cheapestPhone(phones);
-
-
-console.log(myChoice);
+console.log(sum);
